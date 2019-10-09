@@ -11,11 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     
     //----------Attributes--------//
-    let hoursWorked = 0
-    var stateTax = 0
-    let grossPay = 0
-    let netPay = 0
-    let moveToSavings = 0
+    let hourlyWage = 11.25
+    var hoursWorked = 0.0
+    var stateTax = 0.0
+    var amountTaxed = 0.0
+    var grossPay = 0.0
+    var netPay = 0.0
+    var moveToSavings = 0.0
     
     
     //-----------Outlets----------//
@@ -34,9 +36,11 @@ class ViewController: UIViewController {
     
     //-----------Actions----------//
     @IBAction func CalculateButtonAction(_ sender: UIButton) {
+        GrossLabel.text = "$" + String(format: "%.2f", CalculateGrossPay())
+        NetLabel.text = "$" + String(format: "%.2f", CalculateNetPay())
+        SavingsLabel.text = "$" + String(format: "%.2f", CalculateSavingsTransfer())
         ShowCalculatedLabels()
     }
-    
     
     
     
@@ -59,16 +63,22 @@ class ViewController: UIViewController {
         SavingsLabel.isHidden = true
     }
     
-    func CalculateGrossPay() {
-        
+    func CalculateGrossPay(/*_ workHours: Double */) -> Double {
+        hoursWorked = Double(HoursTextField.text!)!
+        stateTax = Double(StateTaxTextField.text!)!
+        grossPay = hourlyWage * hoursWorked
+        return grossPay
     }
     
-    func CalculateNetPay() {
-        
+    func CalculateNetPay() -> Double {
+        amountTaxed = grossPay * stateTax
+        netPay = grossPay - amountTaxed
+        return netPay
     }
     
-    func CalculateSavingsTransfer() {
-        
+    func CalculateSavingsTransfer() -> Double {
+        moveToSavings = netPay * 0.20
+        return moveToSavings
     }
 
     override func viewDidLoad() {

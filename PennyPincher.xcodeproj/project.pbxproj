@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20E76A823503B380076928F /* Cash Register.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A20E76A723503B380076928F /* Cash Register.mp3 */; };
 		A225F164234BABEC006C31BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A225F163234BABEC006C31BD /* AppDelegate.swift */; };
 		A225F166234BABEC006C31BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A225F165234BABEC006C31BD /* SceneDelegate.swift */; };
 		A225F168234BABEC006C31BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A225F167234BABEC006C31BD /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A20E76A723503B380076928F /* Cash Register.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cash Register.mp3"; sourceTree = "<group>"; };
 		A225F160234BABEC006C31BD /* PennyPincher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PennyPincher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A225F163234BABEC006C31BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A225F165234BABEC006C31BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				A225F165234BABEC006C31BD /* SceneDelegate.swift */,
 				A225F167234BABEC006C31BD /* ViewController.swift */,
 				A225F169234BABEC006C31BD /* Main.storyboard */,
+				A20E76A723503B380076928F /* Cash Register.mp3 */,
 				A225F16C234BABF4006C31BD /* Assets.xcassets */,
 				A225F16E234BABF4006C31BD /* LaunchScreen.storyboard */,
 				A225F171234BABF4006C31BD /* Info.plist */,
@@ -235,6 +238,7 @@
 				A225F170234BABF4006C31BD /* LaunchScreen.storyboard in Resources */,
 				A225F16D234BABF4006C31BD /* Assets.xcassets in Resources */,
 				A225F16B234BABEC006C31BD /* Main.storyboard in Resources */,
+				A20E76A823503B380076928F /* Cash Register.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MU6YY5X9CZ;
 				INFOPLIST_FILE = PennyPincher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MU6YY5X9CZ;
 				INFOPLIST_FILE = PennyPincher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
